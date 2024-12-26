@@ -1,0 +1,853 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Core Capabilities</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="style.css" />
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    ;
+
+    <script src="index.js"></script>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__container">
+        <a href="/" class="header__logo" aria-label="AerOpt - Advanced Science">
+          <img src="assets/images/aeropt-logo.png" alt="" />
+        </a>
+        <a href="/contact" class="header__cta d-none d-sm-block">
+          <img src="assets/images/aeroplan-icon.png" alt="" />
+          Book a Call
+        </a>
+      </div>
+    </header>
+    <main>
+      <!-- Hero Section -->
+      <section class="hero d-flex align-items-center px__135">
+        <div class="container-fluid px-lg-5">
+          <div class="row">
+            <div class="col-lg-8">
+              <div class="hero__content">
+                <!-- Hero Title with Dynamic Text -->
+                <h1 class="fw-bold mb-3 text-white hero__title">
+                  <div class="hero__title-line">Unlock $25 million in</div>
+                  <div class="hero__title-line">
+                    2025 with better&nbsp;
+                    <span
+                      class="hero__highlight d-inline-block position-relative">
+                      <span
+                        class="hero__rotating-text hero__rotating-text--active"
+                        >Fleet Scheduling</span
+                      >
+                      <span class="hero__rotating-text">
+                        Route Optimization</span
+                      >
+                      <span class="hero__rotating-text"> Crew Management</span>
+                      <span class="hero__rotating-text">
+                        Resource Allocation</span
+                      >
+                    </span>
+                  </div>
+                </h1>
+
+                <!-- Hero Description -->
+                <p class="hero__description lead text-white">
+                  The route to better airline profitability is combining
+                  <span class="fw-bold">
+                    Data science, operation research, and tech led solutions
+                  </span>
+                </p>
+
+                <!-- CTA Button -->
+                <a
+                  href="#contact"
+                  class="hero__cta btn btn-lg d-inline-flex align-items-center gap-2">
+                  <img
+                    class="hero__cta-icon"
+                    src="assets/images/aeroplan-icon.png"
+                    alt="" />
+                  Talk to an Expert
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Partnership Section -->
+      <section class="partnerships px__135 py__60">
+        <div class="container text-center">
+          <h2 class="partnerships__title para-medium mb-4">
+            Partnerships with Industry Leaders
+          </h2>
+          <div class="logos__wrapper">
+            <div class="logos__track">
+              <div class="logo__item">
+                <img
+                  src="assets/images/codewalnut.png"
+                  alt="CodeWalnut"
+                  class="img-fluid" />
+              </div>
+              <div class="logo__item">
+                <img src="assets/images/Sabre.png" alt="Sabre" class="img-fluid" />
+              </div>
+              <div class="logo__item">
+                <img
+                  src="assets/images/infogain.png"
+                  alt="Infogain"
+                  class="img-fluid" />
+              </div>
+              <div class="logo__item">
+                <img src="assets/images/FPT.png" alt="FPT" class="img-fluid" />
+              </div>
+              <div class="logo__item">
+                <img src="assets/images/TCS.png" alt="TCS" class="img-fluid" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Value Section -->
+      <section class="value-section px__135 py__40">
+        <h2 class="value-section__heading">
+          <span class="heading--navy">The AerOpt </span>
+          <span class="heading--gold">Value</span>
+        </h2>
+        <div class="value-section__container">
+          <div class="value-section__content">
+            <div class="value-section__item">
+              <div class="icon-wrapper">
+                <img
+                  src="assets/images/aeroplan-navy-color.png"
+                  alt="aeroplane-icon" />
+              </div>
+              <p class="content__text para-large">
+                AerOpt is an airline consulting firm specializing in data
+                science, operations research, and IT led solutions.
+              </p>
+            </div>
+            <div class="value-section__item">
+              <div class="icon-wrapper">
+                <img
+                  src="assets/images/aeroplan-navy-color.png"
+                  alt="aeroplane-icon" />
+              </div>
+              <p class="content__text para-large">
+                AerOpt has helped 10+ airlines achieve $10 million - $30 million
+                incremental savings in 3-9 months.
+              </p>
+            </div>
+          </div>
+          <div class="value-section__image">
+            <img src="assets/images/aeropt-value.jpg" alt="Airplane on runway" />
+          </div>
+        </div>
+      </section>
+
+      <!-- What to Do Section -->
+      <section class="timeline-section px__135 py__40">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 text-center">
+              <h2 class="section-title fw-semibold text--navy text-start">
+                What do you wish to Improve in<span class="text--gold"
+                  >&nbsp;2025</span
+                >?
+              </h2>
+            </div>
+          </div>
+
+          <div class="timeline-wrapper">
+            <div class="timeline__line"></div>
+            <div class="timeline__plane-icon">
+              <img
+                src="assets/images/gold-color-aeroplan-icon.png"
+                alt="Timeline progress indicator" />
+            </div>
+
+            <div class="timeline-item" data-step="1">
+              <div class="row align-items-center">
+                <div class="col-md-5 order-md-1 d-none d-lg-block">
+                  <div class="timeline-image">
+                    <img
+                      src="assets/images/fleet-assignment.png"
+                      alt="Fleet assignment"
+                      class="img-fluid" />
+                  </div>
+                </div>
+                <div class="col-md-2 order-md-2">
+                  <div class="timeline-indicator">
+                    <div class="step-number">1</div>
+                  </div>
+                </div>
+                <div class="col-md-5 order-md-3 timeline__points">
+                  <div class="timeline-content">
+                    <h3 class="fw-semibold h3">
+                      Fleet assignment & Scheduling
+                    </h3>
+                    <p class="para-medium text--color-slate">
+                      Optimize airline fleet assignment and scheduling with our
+                      innovative system, boosting efficiency, reducing costs,
+                      and enhancing operational performance.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="timeline-item" data-step="2">
+              <div class="row align-items-center timeline-item-reverse">
+                <div class="col-md-5 order-md-1 timeline__points">
+                  <div class="timeline-content">
+                    <h3 class="fw-semibold h3">
+                      Dynamic pricing & Revenue management
+                    </h3>
+                    <p class="para-medium text--color-slate">
+                      Optimize airline revenue with dynamic pricing and advanced
+                      revenue management solutions. Maximize profitability and
+                      enhance decision-making efficiency effortlessly.
+                    </p>
+                  </div>
+                </div>
+                <div class="col-md-2 order-md-2">
+                  <div class="timeline-indicator">
+                    <div class="step-number">2</div>
+                  </div>
+                </div>
+                <div class="col-md-5 order-md-3 d-none d-lg-block">
+                  <div class="timeline-image">
+                    <img
+                      src="assets/images/dynamic-pricing.png"
+                      alt="Revenue management"
+                      class="img-fluid" />
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="timeline-item" data-step="3">
+              <div class="row align-items-center">
+                <div class="col-md-5 order-md-1 d-none d-lg-block">
+                  <div class="timeline-image">
+                    <img
+                      src="assets/images/crew-cargo.png"
+                      alt="Crew and Cargo optimization"
+                      class="img-fluid" />
+                  </div>
+                </div>
+                <div class="col-md-2 order-md-2">
+                  <div class="timeline-indicator">
+                    <div class="step-number">3</div>
+                  </div>
+                </div>
+                <div class="col-md-5 order-md-3 timeline__points">
+                  <div class="timeline-content">
+                    <h3 class="fw-semibold h3">Crew & Cargo optimization</h3>
+                    <p class="para-medium text--color-slate">
+                      Revolutionize operations with our advanced Crew and Cargo
+                      optimization solutions. Maximize efficiency, reduce costs,
+                      and ensure seamless performance.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="timeline-item" data-step="4">
+              <div class="row align-items-center timeline-item-reverse">
+                <div class="col-md-5 order-md-1 timeline__points">
+                  <div class="timeline-content">
+                    <h3 class="fw-semibold h3">Demand forecasting</h3>
+                    <p class="para-medium text--color-slate">
+                      Use statistical models, machine learning, and historical
+                      data to predict future passenger demand.
+                    </p>
+                  </div>
+                </div>
+                <div class="col-md-2 order-md-2">
+                  <div class="timeline-indicator">
+                    <div class="step-number">4</div>
+                  </div>
+                </div>
+                <div class="col-md-5 order-md-3 d-none d-lg-block">
+                  <div class="timeline-image">
+                    <img
+                      src="assets/images/demand-forecasting.png"
+                      alt="Demand forecasting"
+                      class="img-fluid" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Success Section -->
+      <section class="success container-fluid py__80 px__135">
+        <div class="row align-items-center success__heading">
+          <div class="col">
+            <h2 class="fw-semibold text--navy">
+              Success <span class="text--gold">stories</span>
+            </h2>
+          </div>
+          <div class="col-auto d-none d-sm-block">
+            <div class="d-flex gap-3">
+              <button
+                class="success__nav-button d-flex align-items-center justify-content-center success-prev">
+                <img src="assets/images/arrow-left.svg" alt="arrow-left" />
+              </button>
+              <button
+                class="success__nav-button d-flex align-items-center justify-content-center success-next">
+                <img src="assets/images/arrow-right.svg" alt="arrow-right" />
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="success__carousel swiper">
+          <div class="swiper-wrapper">
+            <!-- Slide 1 -->
+            <div class="swiper-slide">
+              <div class="row">
+                <div class="col-md-6 mb-4 mb-md-0 sucess__image--wrapper">
+                  <img
+                    src="assets/images/aeropt-value.jpg"
+                    alt="Aircraft"
+                    class="success__image img-fluid" />
+                </div>
+                <div class="col-md-6 success__content">
+                  <h3 class="success__subtitle text--navy">
+                    Operations research
+                  </h3>
+                  <h4 class="success__subtitle-mini text--navy">
+                    Repeated success in fleet assignment
+                  </h4>
+                  <p class="success__description para-medium">
+                    The last minute re-allocation process & fleet optimizer was
+                    robust enough to be repeated with region specific
+                    forecasting customizations. Several airlines across Europe,
+                    Brazil, China, India and the middle east adopted this
+                    solution.
+                  </p>
+                  <a href="#" class="success__link text--gold fw-medium"
+                    >Read More</a
+                  >
+                </div>
+              </div>
+            </div>
+            <!-- Slide 2 -->
+            <div class="swiper-slide">
+              <div class="row">
+                <div class="col-md-6 mb-4 mb-md-0 sucess__image--wrapper">
+                  <img
+                    src="assets/images/aeropt-value.jpg"
+                    alt="Aircraft"
+                    class="success__image img-fluid" />
+                </div>
+                <div class="col-md-6">
+                  <h3 class="success__subtitle text--navy">
+                    Operations research 2
+                  </h3>
+                  <h4 class="success__subtitle-mini text--navy">
+                    Repeated success in fleet assignment
+                  </h4>
+                  <p class="success__description para-medium">
+                    The last minute re-allocation process & fleet optimizer was
+                    robust enough to be repeated with region specific
+                    forecasting customizations. Several airlines across Europe,
+                    Brazil, China, India and the middle east adopted this
+                    solution.
+                  </p>
+                  <a href="#" class="success__link text--gold fw-medium"
+                    >Read More 2</a
+                  >
+                </div>
+              </div>
+            </div>
+            <!-- Slide 3 -->
+            <div class="swiper-slide">
+              <div class="row">
+                <div class="col-md-6 mb-4 mb-md-0 sucess__image--wrapper">
+                  <img
+                    src="assets/images/aeropt-value.jpg"
+                    alt="Aircraft"
+                    class="success__image img-fluid" />
+                </div>
+                <div class="col-md-6">
+                  <h3 class="success__subtitle text--navy">
+                    Operations research 3
+                  </h3>
+                  <h4 class="success__subtitle-mini text--navy">
+                    Repeated success in fleet assignment
+                  </h4>
+                  <p class="success__description para-medium">
+                    The last minute re-allocation process & fleet optimizer was
+                    robust enough to be repeated with region specific
+                    forecasting customizations. Several airlines across Europe,
+                    Brazil, China, India and the middle east adopted this
+                    solution.
+                  </p>
+                  <a href="#" class="success__link text--gold fw-medium"
+                    >Read More 3</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </section>
+      <!-- Margin Section -->
+      <section class="margins bg-default">
+        <div class="margins__container">
+          <h2 class="margins__heading">
+            Airline margins are wafer thin.<br />
+            Extract every ounce of savings with AerOpt
+          </h2>
+          <a href="#" class="margins__cta">Find out how</a>
+        </div>
+      </section>
+
+      <!-- capabilities Section -->
+      <section class="capabilities px__135 py__80">
+        <h2 class="capabilities__heading">
+          Backed by deep airline expertise,
+          <span class="capabilities__heading-highlight">AerOpt</span>
+          delivers value through 4 core capabilities
+        </h2>
+
+        <div class="capabilities__container">
+          <div class="capabilities__items--left">
+            <div class="capability-item" data-capability="data-science">
+              <h3 class="capability-item__title">Data science</h3>
+              <div class="capability-item__line"></div>
+            </div>
+            <div class="capability-description">
+              Applying machine learning to calibrate and improve data driven
+              models
+            </div>
+            <div class="capability-item is-even" data-capability="technology">
+              <h3 class="capability-item__title">Technology</h3>
+              <div class="capability-item__line"></div>
+            </div>
+            <div class="capability-description">
+              Building scalable solutions with modern technology stack
+            </div>
+          </div>
+
+          <div class="capabilities__center">
+            <img
+              src="assets/images/inner.png"
+              alt="Initial Core Capabilities"
+              class="capabilities__center-initial-image" />
+            <img
+              src="assets/images/Ring.png"
+              alt="Core capabilities illustration"
+              class="capabilities__center-image" />
+            <div
+              class="capabilities__center-overlay default"
+              data-image="data-science">
+              <p>
+                Applying machine learning to calibrate and improve data driven
+                models
+              </p>
+            </div>
+            <div class="capabilities__center-overlay" data-image="technology">
+              <p>Building scalable solutions with modern technology stack</p>
+            </div>
+            <div class="capabilities__center-overlay" data-image="operations">
+              <p>
+                Optimizing complex airline operations through advanced
+                algorithms
+              </p>
+            </div>
+            <div class="capabilities__center-overlay" data-image="consulting">
+              <p>
+                Providing expert guidance for airline business transformation
+              </p>
+            </div>
+          </div>
+
+          <div class="capabilities__items--right">
+            <div class="capability-item reverse" data-capability="operations">
+              <h3 class="capability-item__title">Operations research</h3>
+              <div class="capability-item__line"></div>
+            </div>
+            <div class="capability-description reverse">
+              Optimizing complex airline operations through advanced algorithms
+            </div>
+            <div
+              class="capability-item is-even reverse"
+              data-capability="consulting">
+              <h3 class="capability-item__title">Business Consulting</h3>
+              <div class="capability-item__line"></div>
+            </div>
+            <div class="capability-description reverse">
+              Providing expert guidance for airline business transformation
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--Ho it Works Section--->
+      <section class="how-it-works bg-default px__135 py__80 my__40">
+        <h2 class="mb-5">How it <span class="text--gold">Works</span></h2>
+
+        <div class="grid-container">
+          <!-- Process Boxes -->
+          <div class="process-box">
+            <img
+              src="assets/images/discovery.png"
+              alt=""
+              class="mb-3"
+              width="40"
+              height="40" />
+            <p class="para-regular fw-semibold mb-2">Discovery</p>
+            <p class="text-white para-small">
+              Understand your unique challenges and opportunities through
+              in-depth analysis
+            </p>
+          </div>
+
+          <div class="process-box">
+            <img
+              src="assets/images/book.png"
+              alt=""
+              class="mb-3"
+              width="40"
+              height="40" />
+            <p class="para-regular fw-semibold mb-2">Solution Strategy</p>
+            <p class="text-white para-small">
+              Develop tailored strategies aligned with your business objectives
+            </p>
+          </div>
+
+          <div class="process-box">
+            <img
+              src="assets/images/methodology.png"
+              alt=""
+              class="mb-3"
+              width="40"
+              height="40" />
+            <p class="para-regular fw-semibold mb-2">Proof of concept</p>
+            <p class="text-white para-small">
+              Validate solutions through rigorous testing and refinement
+            </p>
+          </div>
+
+          <div class="process-box">
+            <img
+              src="assets/images/vintage-computer.png"
+              alt=""
+              class="mb-3"
+              width="40"
+              height="40" />
+            <p class="para-regular fw-semibold mb-2">Design & Develop</p>
+            <p class="text-white para-small">
+              Create and implement innovative solutions for your needs
+            </p>
+          </div>
+
+          <div class="process-box">
+            <img
+              src="assets/images/deployment.png"
+              alt=""
+              class="mb-3"
+              width="40"
+              height="40" />
+            <p class="para-regular fw-semibold mb-2">Deploy & Generate value</p>
+            <p class="text-white para-small">
+              Launch and optimize solutions for maximum impact
+            </p>
+          </div>
+
+          <!-- Benefits Box -->
+          <div
+            class="benefits-box d-flex flex-column justify-content-center align-items-center text-center">
+            <h3 class="text--gold">
+              Business benefits unlocked within <br />
+              <span class="benefits-box__heading text-white">3-9 months</span>
+            </h3>
+          </div>
+        </div>
+      </section>
+      <!--Crew Section-->
+      <section class="crew-section px__135 py__80">
+        <h2 class="text--navy display-4 fw-semibold mb__80">
+          Meet the <span class="text--gold">Crew</span>
+        </h2>
+
+        <div class="row g-4">
+          <!-- Team Members Column -->
+          <div class="col-lg-7">
+            <div class="row g-4">
+              <!-- Team Member 1 -->
+              <div class="col-md-5">
+                <div class="member-card">
+                  <div class="member-card__image-container">
+                    <img
+                      src="assets/images/Balakrishnan.jpg"
+                      alt="Balakrishnan"
+                      class="member-card__image" />
+                    <div class="member-card__overlay">
+                      <h3 class="h4 mb-1">Balakrishnan</h3>
+                      <div class="small mb-2">CEO</div>
+                    </div>
+                  </div>
+                  <div class="member-card__content">
+                    <p class="member-card__description">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Sed do eiusmod tempor incididunt ut labore.
+                    </p>
+                    <a
+                      href="#"
+                      class="member-card__linkedin"
+                      aria-label="Connect with Balakrishnan on LinkedIn">
+                      <img
+                        src="assets/images/linkedin -icon.png"
+                        alt=""
+                        width="24"
+                        height="24" />
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Team Member 2 -->
+              <div class="col-md-5">
+                <div class="member-card">
+                  <div class="member-card__image-container">
+                    <img
+                      src="assets/images/Rajesh.jpg"
+                      alt="Balakrishnan"
+                      class="member-card__image" />
+                    <div class="member-card__overlay">
+                      <h3 class="h4 mb-1">Balakrishnan</h3>
+                      <div class="small mb-2">CEO</div>
+                    </div>
+                  </div>
+                  <div class="member-card__content">
+                    <p class="member-card__description">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Sed do eiusmod tempor incididunt ut labore.
+                    </p>
+                    <a
+                      href="#"
+                      class="member-card__linkedin"
+                      aria-label="Connect with Balakrishnan on LinkedIn">
+                      <img
+                        src="assets/images/linkedin -icon.png"
+                        alt=""
+                        width="24"
+                        height="24" />
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Engagements Column -->
+          <div class="Engagements__wrapper">
+            <div class="engagements shadow">
+              <h3 class="h5 p-3 border-bottom mb-0">Recent Engagements</h3>
+              <div class="engagements__list">
+                <div class="scroll-container">
+                  <!-- Original set -->
+                  <div
+                    class="engagement-card d-flex justify-content-between align-items-center">
+                    <div class="engagement-card__text">
+                      Revenue Optimization solution in
+                      <span class="engagement-card__country">Saudi Arabia</span>
+                    </div>
+                    <img
+                      src="assets/images/saudi-arabia-flag.png"
+                      alt="Saudi Arabia flag"
+                      class="engagement-card__flag ms-4" />
+                  </div>
+                  <div
+                    class="engagement-card d-flex justify-content-between align-items-center">
+                    <div class="engagement-card__text">
+                      Improving crew allocation for a growing airline in
+                      <span class="engagement-card__country">Brazil</span>
+                    </div>
+                    <img
+                      src="assets/images/brazil-flag.png"
+                      alt="Brazil flag"
+                      class="engagement-card__flag ms-4" />
+                  </div>
+                  <div
+                    class="engagement-card d-flex justify-content-between align-items-center">
+                    <div class="engagement-card__text">
+                      Reducing cost of operations for a chartered airline in
+                      <span class="engagement-card__country">USA</span>
+                    </div>
+                    <img
+                      src="assets/images/use-plag.png"
+                      alt="USA flag"
+                      class="engagement-card__flag ms-4" />
+                  </div>
+                  <!-- Duplicated set for seamless scrolling -->
+                  <div
+                    class="engagement-card d-flex justify-content-between align-items-center">
+                    <div class="engagement-card__text">
+                      Revenue Optimization solution in
+                      <span class="engagement-card__country">Saudi Arabia</span>
+                    </div>
+                    <img
+                      src="assets/images/saudi-arabia-flag.png"
+                      alt="Saudi Arabia flag"
+                      class="engagement-card__flag ms-4" />
+                  </div>
+                  <div
+                    class="engagement-card d-flex justify-content-between align-items-center">
+                    <div class="engagement-card__text">
+                      Improving crew allocation for a growing airline in
+                      <span class="engagement-card__country">Brazil</span>
+                    </div>
+                    <img
+                      src="assets/images/brazil-flag.png"
+                      alt="Brazil flag"
+                      class="engagement-card__flag ms-4" />
+                  </div>
+                  <div
+                    class="engagement-card d-flex justify-content-between align-items-center">
+                    <div class="engagement-card__text">
+                      Reducing cost of operations for a chartered airline in
+                      <span class="engagement-card__country">USA</span>
+                    </div>
+                    <img
+                      src="assets/images/use-plag.png"
+                      alt="USA flag"
+                      class="engagement-card__flag ms-4" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="bg-navy text-white">
+      <!-- CTA Section -->
+      <div class="cta-section text-center">
+        <div class="container">
+          <h2 class="special-text display-4 mb-4 fw-bold">
+            Choose AerOpt: <br />
+            Your <span class="text-gold">{optimization}</span> co-pilot<br />
+            to better bottom line
+          </h2>
+          <a href="#" class="btn btn-gold btn-lg">Talk to an Expert</a>
+        </div>
+      </div>
+
+      <!-- Footer Content -->
+      <div class="footer-content footer-bottom px__135">
+        <div class="row footer-content-wrapper">
+          <!-- Branding Section -->
+          <div
+            class="col-md-4 d-flex flex-column justify-content-between footer-content__small">
+            <div class="d-flex flex-column">
+              <img
+                src="assets/images/aeropt-logo.png"
+                alt="AerOpt Logo"
+                class="img-fluid mb-3"
+                width="197px"
+                height="197px" />
+              <div class="d-flex mb-3">
+                <a href="#" class="social-link me-3" aria-label="LinkedIn"
+                  ><img src="assets/images/linkedin-icon.png" alt=""
+                /></a>
+                <a href="#" class="social-link me-3" aria-label="Instagram"
+                  ><img src="assets/images/instagram-icon.png" alt=""
+                /></a>
+                <a href="#" class="social-link me-3" aria-label="Twitter"
+                  ><img src="assets/images/twitter-icon (2).png" alt=""
+                /></a>
+                <a href="#" class="social-link" aria-label="Facebook"
+                  ><img src="assets/images/facebook-icon.png" alt=""
+                /></a>
+              </div>
+            </div>
+
+            <p class="small d-none d-md-block">
+              Copyrights©2024 Aeropt private limited<br />
+              all rights reserved.
+            </p>
+          </div>
+
+          <!-- Locations Section -->
+          <div
+            class="col-md-4 d-flex flex-column justify-content-between footer-content__small footer-content__location">
+            <div
+              class="border-start border-gold ps-3 footer-content__location--item">
+              <h3 class="footer__location--heading">Banglore</h3>
+              <p class="small">
+                Akshya Nagar 1st Block 1st Cross,<br />
+                Rammurthy nagar, Bangalore-560016
+              </p>
+            </div>
+            <div class="border-start border-gold ps-3">
+              <h3 class="footer__location--heading">Dallas</h3>
+              <p class="small">
+                Puerta 511 Municipio Diego Zeleya 7<br />
+                Puerta 122, Paterna, Ext 38822
+              </p>
+            </div>
+          </div>
+
+          <!-- Newsletter Section -->
+          <div
+            class="col-md-4 d-flex flex-column justify-content-between footer-content__newsletter--gap footer-content__small">
+            <div>
+              <h3 class="footer__newsletter-title">Subscribe our Newsletter</h3>
+              <form>
+                <div class="input-group">
+                  <input
+                    type="email"
+                    class="form-control newsletter-input"
+                    placeholder="Enter your Email"
+                    required />
+                  <button
+                    type="submit"
+                    class="btn bg-gold text--navy footer__newsletter--btn">
+                    <img
+                      width="16px"
+                      height="16px"
+                      src="assets/images/aeroplan-navy-color.png"
+                      alt="aeroplan-icon" />
+                    <span class="fw-semibold">Subscribe</span>
+                  </button>
+                </div>
+              </form>
+            </div>
+            <div class="footer-content__policy">
+              <p class="small d-block d-md-none">
+                Copyrights©2024 Aeropt private limited<br />
+                all rights reserved.
+              </p>
+              <div
+                class="d-flex align-items-center justify-content-md-end justify-content-start gap-2">
+                <a href="#" class="text-white text-decoration-none small"
+                  >Privacy Policy</a
+                >
+                <div>|</div>
+                <a href="#" class="text-white text-decoration-none small"
+                  >Terms & Conditions</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
