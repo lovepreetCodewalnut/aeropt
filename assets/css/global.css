@@ -1,125 +1,154 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 
-:root{
-    --primary-color: #0E3549;
-    --secondary-color: #D5AC6C;
-    --text-color: #475E69;
-    --btn-background-color: #D5AC6C;
-    --white-color: #FFFFFF;
-    --soft-white-color: #FCFCFF;
+:root {
+  --primary-color: #0e3549;
+  --secondary-color: #d5ac6c;
+  --text-color: #475e69;
+  --btn-background-color: #d5ac6c;
+  --white-color: #ffffff;
+  --soft-white-color: #fcfcff;
 
-    /* Typography */
-    --body-font-family: "Inter", serif;
-    --heading-font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  /* Typography */
+  --body-font-family: "Inter", serif;
+  --heading-font-family: system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+    sans-serif;
 }
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-body{
-    font-family: var(--body-font-family);
+body {
+  font-family: var(--body-font-family);
+}
+.para-small {
+  font-family: var(--body-font-family);
+  font-size: 16px;
+  line-height: 1.5;
 }
 
-h1, .h1{
-    font-size: calc(28px + (84 - 28) * ((100vw - 320px) / (1920 - 320)));
-	line-height: calc(34px + (100 - 34) * ((100vw - 320px) / (1920 - 320)));
-	font-family: var(--heading-font-family); /*Change it with heading font family */
-	color: var(--secondary-palette-dark-grey);
-	font-variant-ligatures: no-common-ligatures;
-	margin-bottom: 0;
+h1,
+.h1 {
+  font-size: calc(28px + (84 - 28) * ((100vw - 320px) / (1920 - 320)));
+  line-height: calc(34px + (100 - 34) * ((100vw - 320px) / (1920 - 320)));
+  font-family: var(
+    --heading-font-family
+  ); /*Change it with heading font family */
+  color: var(--secondary-palette-dark-grey);
+  font-variant-ligatures: no-common-ligatures;
+  margin-bottom: 0;
 }
 
 h2,
-.h2{
-	font-size: calc(28px + (56 - 28) * ((100vw - 320px) / (1920 - 320)));
-	line-height: calc(34px + (67 - 34) * ((100vw - 320px) / (1920 - 320)));
-	font-family: var(--heading-font-family); /*Change it with heading font family */
-	color: var(--secondary-palette-dark-grey);
-	font-variant-ligatures: no-common-ligatures;
-	margin-bottom: 0;
+.h2 {
+  font-size: calc(28px + (56 - 28) * ((100vw - 320px) / (1920 - 320)));
+  line-height: calc(34px + (67 - 34) * ((100vw - 320px) / (1920 - 320)));
+  font-family: var(
+    --heading-font-family
+  ); /*Change it with heading font family */
+  color: var(--secondary-palette-dark-grey);
+  font-variant-ligatures: no-common-ligatures;
+  margin-bottom: 0;
 }
 
 h3,
 .h3 {
-	font-size: calc(26px + (30 - 26) * ((100vw - 320px) / (1920 - 320)));
-	line-height: calc(31px + (36 - 31) * ((100vw - 320px) / (1920 - 320)));
-	font-family: var(--heading-font-family);/*Change it with heading font family */
-	color: var(--secondary-palette-dark-grey);
-	font-variant-ligatures: no-common-ligatures;
-	margin-bottom: 0;
+  font-size: calc(26px + (30 - 26) * ((100vw - 320px) / (1920 - 320)));
+  line-height: calc(31px + (36 - 31) * ((100vw - 320px) / (1920 - 320)));
+  font-family: var(
+    --heading-font-family
+  ); /*Change it with heading font family */
+  color: var(--secondary-palette-dark-grey);
+  font-variant-ligatures: no-common-ligatures;
+  margin-bottom: 0;
 }
 
 h4,
 .h4 {
-	font-size: calc(26px + (28 - 26) * ((100vw - 320px) / (1920 - 320)));
-	line-height: calc(20px + (34 - 20) * ((100vw - 320px) / (1920 - 320)));
-	font-family: var(--heading-font-family);/*Change it with heading font family */
-	color: var(--secondary-palette-dark-grey);
-	font-variant-ligatures: no-common-ligatures;
-	margin-bottom: 0;
+  font-size: calc(26px + (28 - 26) * ((100vw - 320px) / (1920 - 320)));
+  line-height: calc(20px + (34 - 20) * ((100vw - 320px) / (1920 - 320)));
+  font-family: var(
+    --heading-font-family
+  ); /*Change it with heading font family */
+  color: var(--secondary-palette-dark-grey);
+  font-variant-ligatures: no-common-ligatures;
+  margin-bottom: 0;
 }
 
 h6,
 .h6 {
-	font-size: calc(16px + (18 - 16) * ((100vw - 320px) / (1920 - 320)));
-	line-height: calc(19px + (22 - 19) * ((100vw - 320px) / (1920 - 320)));
-	font-family: var(--heading-font-family);/*Change it with heading font family */
-	color: var(--secondary-palette-dark-grey);
-	font-variant-ligatures: no-common-ligatures;
-	margin-bottom: 0;
+  font-size: calc(16px + (18 - 16) * ((100vw - 320px) / (1920 - 320)));
+  line-height: calc(19px + (22 - 19) * ((100vw - 320px) / (1920 - 320)));
+  font-family: var(
+    --heading-font-family
+  ); /*Change it with heading font family */
+  color: var(--secondary-palette-dark-grey);
+  font-variant-ligatures: no-common-ligatures;
+  margin-bottom: 0;
 }
 
-p{
-    font-family: var(--body-font-family);
-    font-size: 23px;
+p {
+  font-family: var(--body-font-family);
+  font-size: 23px;
 }
 
-.para-big{
-    font-size: 28px;
+.para-big {
+  font-size: 28px;
 }
 
+.primary-btn {
+  box-shadow: 0px 4px 4px 0px #00000040;
+  background-color: var(--btn-background-color);
+  color: var(--white-color);
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 20px;
+  cursor: pointer;
+  text-decoration: none;
+}
 
-
-.primary-btn{
-    box-shadow: 0px 4px 4px 0px #00000040;
-    background-color: var(--btn-background-color);
-    color: var(--white-color);
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    font-size: 20px;
-    cursor: pointer;
-    text-decoration: none;
+.secondary-btn {
+  box-shadow: none;
+  background-color: none;
+  color: var(--white-color);
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 20px;
+  line-height: 28px;
+  cursor: pointer;
+  text-decoration: none;
 }
 
 /* Color Classes */
-.primary-color{
-    color: var(--primary-color);
+.primary-color {
+  color: var(--primary-color);
 }
 
-.secondary-color{
-    color: var(--secondary-color);
+.secondary-color {
+  color: var(--secondary-color);
 }
 
-.soft-white-color{
-    color: var(--soft-white-color);
+.soft-white-color {
+  color: var(--soft-white-color);
 }
 
-.text-color{
-    color: var(--text-color);
+.text-color {
+  color: var(--text-color);
 }
 
-.white-color{
-    color: var(--white-color);
+.white-color {
+  color: var(--white-color);
 }
 
-.btn-background-color{
-    background-color: var(--btn-background-color);
+.btn-background-color {
+  background-color: var(--btn-background-color);
 }
 
-.gold-border{
-    border: 2px solid #D5AC6C;
+.gold-border {
+  border: 2px solid #d5ac6c;
 }
