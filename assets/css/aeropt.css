@@ -616,13 +616,15 @@ footer .cta-banner {
   }
 }
 
-@media (max-width: 768px) {
+
+
+@media (max-width: 767.98px) {
   .timeline__line {
-    left: 23px;
+    left: 7%;
   }
 
   .timeline__plane-icon {
-    left: 23px;
+    left: 7%;
   }
 
   .timeline-item__indicator {
@@ -718,5 +720,15 @@ footer .cta-banner {
   .info-card__main-card--time {
     font-size: 32px;
     line-height: 32px;
+  }
+}
+
+@media (max-width: 475px) {
+  .timeline__line {
+    left: 6%;
+  }
+
+  .timeline__plane-icon {
+    left: 6%;
   }
 }
