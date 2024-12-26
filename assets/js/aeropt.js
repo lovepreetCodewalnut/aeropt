@@ -1,4 +1,45 @@
 document.addEventListener("DOMContentLoaded", () => {
+  /*Hero Section*/
+  const ROTATION_INTERVAL = 2000; // 2 seconds per text
+  const ACTIVE_CLASS = "main-banner__rotating-text-item--active";
+  const rotatingTexts = document.querySelectorAll(
+    ".main-banner__rotating-text-item"
+  );
+  let currentIndex = 0;
+  let intervalId = null;
+
+  function rotateText() {
+    rotatingTexts[currentIndex].classList.remove(ACTIVE_CLASS);
+    currentIndex = (currentIndex + 1) % rotatingTexts.length;
+    rotatingTexts[currentIndex].classList.add(ACTIVE_CLASS);
+  }
+
+  function initializeRotation() {
+    rotatingTexts[0].classList.add(ACTIVE_CLASS);
+    cleanup();
+    intervalId = setInterval(rotateText, ROTATION_INTERVAL);
+  }
+
+  function cleanup() {
+    if (intervalId) {
+      clearInterval(intervalId);
+      intervalId = null;
+    }
+  }
+
+  initializeRotation();
+
+  window.addEventListener("unload", cleanup);
+
+  document.addEventListener("visibilitychange", () => {
+    if (document.hidden) {
+      cleanup();
+    } else {
+      initializeRotation();
+    }
+  });
+
+  /* Partner Section */
   const track = document.querySelector(".partner-logos__track");
   const wrapper = document.querySelector(".partner-logos__wrapper");
   const logos = track.innerHTML;
@@ -111,6 +152,7 @@ document.addEventListener("DOMContentLoaded", () => {
     fadeEffect: {
       crossFade: true,
     },
+    autoHeight: true,
   });
 
   /*  ----------Capabilities------------*/

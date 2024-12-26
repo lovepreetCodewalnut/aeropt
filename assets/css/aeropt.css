@@ -15,12 +15,25 @@
   color: #fff;
 }
 
-.main-banner__rotating-text {
-  color: var(--secondary-color);
+.main-banner__title {
+  display: inline-block;
+  white-space: wrap;
 }
 
-.main-banner__description {
-  color: var(--soft-white-color);
+.main-banner__rotating-text-item {
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  white-space: nowrap;
+}
+
+.main-banner__rotating-text-item--active {
+  display: inline-block;
+  position: relative;
+  opacity: 1;
 }
 
 .partner-logos {
@@ -80,7 +93,6 @@
 .timeline-section {
   position: relative;
   overflow: hidden;
-  padding-bottom: 40px;
 }
 
 .timeline__title {
@@ -118,7 +130,6 @@
 }
 
 .timeline-item {
-  margin-bottom: 100px;
   position: relative;
   transition: opacity 0.3s ease;
 }
@@ -182,16 +193,6 @@
   width: 500px;
 }
 
-.success__subtitle {
-  font-size: 40px;
-  line-height: 48px;
-  margin-bottom: 30px;
-}
-
-.success__subtitle--mini {
-  margin-bottom: 20px;
-}
-
 .success__link {
   font-size: 20px;
   line-height: 28px;
@@ -227,11 +228,6 @@
 .capabilities {
   background-color: var(--color-white);
   overflow-x: hidden;
-}
-
-.capabilities__heading {
-  max-width: 900px;
-  margin-bottom: 80px;
 }
 
 .capabilities__container {
@@ -432,14 +428,13 @@
 
 /* Design inconsistent with the rest of the website */
 .info-card__main-card--title {
-  font-size: 35px;
-  font-weight: 600;
   color: var(--secondary-color);
 }
 
 /* Design inconsistent with the rest of the website */
 .info-card__main-card--time {
   font-size: 56px;
+  line-height: 56px;
   font-weight: 700;
 }
 
@@ -447,6 +442,7 @@
   position: relative;
   border-radius: 15px;
   overflow: hidden;
+  max-height: 262px;
 }
 
 .profile__card--author {
@@ -529,10 +525,6 @@ footer .cta-banner {
   background-image: none;
 }
 
-.footer__copyright p {
-  font-size: 14px;
-}
-
 .footer__policy--links p {
   font-size: 14px;
   border-top: 0.5px solid #ffffff;
@@ -542,10 +534,6 @@ footer .cta-banner {
 .footer__location {
   border-left: 2px solid #fafafa;
   min-height: 100px;
-}
-
-.footer__location p {
-  font-size: 14px;
 }
 
 .footer__newsletter-form {
@@ -623,7 +611,7 @@ footer .cta-banner {
     width: 100%;
   }
 
-  .footer__location--first{
+  .footer__location--first {
     border-left: none;
   }
 }
@@ -669,9 +657,6 @@ footer .cta-banner {
   }
 
   /*---------Capabilities Section (VK)----------*/
-  .capabilities__heading {
-    margin-bottom: 40px;
-  }
 
   .capabilities__center {
     display: none;
@@ -728,5 +713,10 @@ footer .cta-banner {
 
   .info-card__main-card--title {
     color: var(--primary-color);
+  }
+
+  .info-card__main-card--time {
+    font-size: 32px;
+    line-height: 32px;
   }
 }

@@ -90,7 +90,8 @@ h5,
   font-weight: 600;
 }
 
-p, .para {
+p,
+.para {
   font-size: calc(16px + (23 - 16) * ((100vw - 320px) / (1920 - 320)));
   line-height: calc(21px + (34 - 21) * ((100vw - 320px) / (1920 - 320)));
   font-family: var(--body-font-family);
@@ -103,7 +104,7 @@ p, .para {
   line-height: calc(19px + (34 - 19) * ((100vw - 320px) / (1920 - 320)));
 }
 
-.para-small{
+.para-small {
   font-size: calc(12px + (14 - 12) * ((100vw - 320px) / (1920 - 320)));
   line-height: calc(15px + (17 - 15) * ((100vw - 320px) / (1920 - 320)));
 }
@@ -123,7 +124,7 @@ p, .para {
 .secondary-btn {
   box-shadow: none;
   background-color: none;
-  color: var(--white-color);
+  color: var(--secondary-color);
   border: none;
   padding: 10px 20px;
   border-radius: 5px;
@@ -163,5 +164,5 @@ p, .para {
 }
 
 .charcoal-blue {
-  color: #3E3E6A;
+  color: #3e3e6a;
 }
