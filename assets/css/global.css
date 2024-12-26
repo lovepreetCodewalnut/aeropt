@@ -38,8 +38,8 @@ h1,
     --heading-font-family
   ); /*Change it with heading font family */
   color: var(--secondary-palette-dark-grey);
-  font-variant-ligatures: no-common-ligatures;
   margin-bottom: 0;
+  font-weight: 700;
 }
 
 h2,
@@ -50,53 +50,62 @@ h2,
     --heading-font-family
   ); /*Change it with heading font family */
   color: var(--secondary-palette-dark-grey);
-  font-variant-ligatures: no-common-ligatures;
   margin-bottom: 0;
+  font-weight: 600;
 }
 
 h3,
 .h3 {
-  font-size: calc(26px + (30 - 26) * ((100vw - 320px) / (1920 - 320)));
-  line-height: calc(31px + (36 - 31) * ((100vw - 320px) / (1920 - 320)));
+  font-size: calc(20px + (35 - 20) * ((100vw - 320px) / (1920 - 320)));
+  line-height: calc(24px + (42 - 24) * ((100vw - 320px) / (1920 - 320)));
   font-family: var(
     --heading-font-family
   ); /*Change it with heading font family */
   color: var(--secondary-palette-dark-grey);
-  font-variant-ligatures: no-common-ligatures;
   margin-bottom: 0;
+  font-weight: 600;
 }
 
 h4,
 .h4 {
-  font-size: calc(26px + (28 - 26) * ((100vw - 320px) / (1920 - 320)));
-  line-height: calc(20px + (34 - 20) * ((100vw - 320px) / (1920 - 320)));
+  font-size: calc(20px + (28 - 20) * ((100vw - 320px) / (1920 - 320)));
+  line-height: calc(24px + (34 - 24) * ((100vw - 320px) / (1920 - 320)));
   font-family: var(
     --heading-font-family
   ); /*Change it with heading font family */
   color: var(--secondary-palette-dark-grey);
-  font-variant-ligatures: no-common-ligatures;
   margin-bottom: 0;
+  font-weight: 600;
 }
 
-h6,
-.h6 {
+h5,
+.h5 {
   font-size: calc(16px + (18 - 16) * ((100vw - 320px) / (1920 - 320)));
   line-height: calc(19px + (22 - 19) * ((100vw - 320px) / (1920 - 320)));
   font-family: var(
     --heading-font-family
   ); /*Change it with heading font family */
   color: var(--secondary-palette-dark-grey);
-  font-variant-ligatures: no-common-ligatures;
+  margin-bottom: 0;
+  font-weight: 600;
+}
+
+p, .para {
+  font-size: calc(16px + (23 - 16) * ((100vw - 320px) / (1920 - 320)));
+  line-height: calc(21px + (34 - 21) * ((100vw - 320px) / (1920 - 320)));
+  font-family: var(--body-font-family);
+  font-weight: 400;
   margin-bottom: 0;
 }
 
-p {
-  font-family: var(--body-font-family);
-  font-size: 23px;
+.para-big {
+  font-size: calc(16px + (28 - 16) * ((100vw - 320px) / (1920 - 320)));
+  line-height: calc(19px + (34 - 19) * ((100vw - 320px) / (1920 - 320)));
 }
 
-.para-big {
-  font-size: 28px;
+.para-small{
+  font-size: calc(12px + (14 - 12) * ((100vw - 320px) / (1920 - 320)));
+  line-height: calc(15px + (17 - 15) * ((100vw - 320px) / (1920 - 320)));
 }
 
 .primary-btn {
@@ -151,4 +160,8 @@ p {
 
 .gold-border {
   border: 2px solid #d5ac6c;
+}
+
+.charcoal-blue {
+  color: #3E3E6A;
 }
