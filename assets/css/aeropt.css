@@ -635,6 +635,10 @@ footer .cta-banner {
     border-radius: 25px;
     width: 100%;
   }
+
+  .footer__location--first{
+    border-left: none;
+  }
 }
 
 @media (max-width: 768px) {
