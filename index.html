@@ -15,164 +15,193 @@
   <body>
     <header role="banner" class="navigation">
       <div class="container-lg">
-        <nav
-          aria-label="Main navigation"
+        <nav 
+          aria-label="Main navigation" 
           class="d-flex align-items-center justify-content-between">
-          <img src="assets/images/aeropt-logo.png" alt="aeropt logo" />
+          <img 
+            src="assets/images/aeropt-logo.png" 
+            alt="Aeropt company logo" />
           <a
-            href=""
-            class="primary-btn d-none d-md-flex align-items-center gap-2">
-            <img src="assets/images/aeroplan-icon.png" alt="airplane icon" />
+            href="#"
+            role="button"
+            class="primary-btn d-none d-md-flex align-items-center gap-2" 
+            aria-label="Book a call button">
+            <img 
+              src="assets/images/aeroplan-icon.png" 
+              alt="Icon of an airplane representing booking a call" />
             <span>Book a Call</span>
           </a>
         </nav>
-      </div>
+      </div>      
     </header>
     <main role="main">
-      <section class="main-banner py-30 py-md-7" aria-labelledby="main-banner">
+      <section class="main-banner py-30 py-md-7" aria-labelledby="hero banner">
         <div class="container-lg">
-          <h1 class="main-banner__title white-color">
+          <h1 id="main-banner-title" class="main-banner__title white-color">
             Unlock $25 million in 2025 with better
             <span class="position-relative d-inline-block">
               <span class="position-relative d-inline-block secondary-color">
                 <span
                   class="main-banner__rotating-text-item main-banner__rotating-text-item--active"
-                  >Fleet Scheduling</span
-                >
-                <span class="main-banner__rotating-text-item"
-                  >Route Optimization</span
-                >
-                <span class="main-banner__rotating-text-item"
-                  >Crew Management</span
-                >
-                <span class="main-banner__rotating-text-item"
-                  >Resource Allocation</span
-                >
+                  aria-live="polite"
+                  >Fleet Scheduling</span>
+                <span class="main-banner__rotating-text-item" aria-hidden="true"
+                  >Route Optimization</span>
+                <span class="main-banner__rotating-text-item" aria-hidden="true"
+                  >Crew Management</span>
+                <span class="main-banner__rotating-text-item" aria-hidden="true"
+                  >Resource Allocation</span>
               </span>
             </span>
           </h1>
+      
           <p class="soft-white-color pt-2 pb-3 py-md-30 para-big">
             The route to better airline profitability is combining
             <strong
-              >Data science, operation research, and tech led solutions</strong
+              >Data science, operation research, and tech-led solutions</strong
             >
           </p>
-          <a href="" class="primary-btn d-inline-flex align-items-center gap-2">
-            <img src="assets/images/aeroplan-icon.png" alt="" />
+      
+          <a 
+            href="#" 
+            role="button" 
+            class="primary-btn d-inline-flex align-items-center gap-2" 
+            aria-label="Talk to an Expert">
+            <img 
+              src="assets/images/aeroplan-icon.png" 
+              alt="Airplane icon" />
             <span>Talk to an Expert</span>
           </a>
         </div>
       </section>
-
-      <section class="partner-logos py-5 pb-lg-7">
+      
+      <section 
+        class="partner-logos py-5 pb-lg-7" 
+        aria-label="Partnerships with Industry Leaders"
+      >
         <div class="container-lg">
           <h2 class="text-center pb-5 para charcoal-blue">
             Partnerships with Industry Leaders
           </h2>
-          <div class="partner-logos__wrapper">
+        
+          <div 
+            class="partner-logos__wrapper" 
+            role="region" 
+            aria-label="Logos of our partners"
+          >
             <div class="partner-logos__track">
               <img
                 src="assets/images/codewalnut.png"
-                alt="CodeWalnut Logo"
-                class="partner-logo img-fluid" />
+                alt="CodeWalnut Company Logo"
+                class="partner-logo img-fluid"
+              />
               <img
                 src="assets/images/sabre.png"
-                alt="Sabre Logo"
-                class="partner-logo img-fluid" />
+                alt="Sabre Company Logo"
+                class="partner-logo img-fluid"
+              />
               <img
                 src="assets/images/infogain.png"
-                alt="Infogain Logo"
-                class="partner-logo img-fluid" />
+                alt="Infogain Company Logo"
+                class="partner-logo img-fluid"
+              />
               <img
                 src="assets/images/FPT.png"
-                alt="FPT Logo"
-                class="partner-logo img-fluid" />
+                alt="FPT Company Logo"
+                class="partner-logo img-fluid"
+              />
               <img
                 src="assets/images/TCS.png"
-                alt="TCS Logo"
-                class="partner-logo img-fluid" />
+                alt="TCS (Tata Consultancy Services) Company Logo"
+                class="partner-logo img-fluid"
+              />
             </div>
           </div>
         </div>
       </section>
 
-      <section class="info-section">
+      <section class="info-section" aria-label="The AerOpt Value Section">
         <div class="container-lg">
           <h2 class="pb-5 primary-color">
             The AerOpt <span class="secondary-color">Value</span>
           </h2>
+      
           <div class="row">
             <div class="col-md-6 pe-lg-5 order-2 order-md-1">
               <div class="info-section__item">
                 <img
                   src="assets/images/aeroplan-navy-color.png"
-                  alt="aeroplane-icon"
-                  class="info-section__item-icon" />
+                  alt="Aeroplane icon"
+                  class="info-section__item-icon"
+                />
                 <p class="info-section__item-description">
-                  AerOpt is an airline consulting firm specializing in data
-                  science, operations research, and IT led solutions.
+                  AerOpt is an airline consulting firm specializing in data science,
+                  operations research, and IT-led solutions.
                 </p>
               </div>
               <div class="info-section__item">
                 <img
                   src="assets/images/aeroplan-navy-color.png"
-                  alt="aeroplane-icon"
-                  class="info-section__item-icon" />
+                  alt="Aeroplane icon"
+                  class="info-section__item-icon"
+                />
                 <p class="info-section__item-description">
-                  AerOpt has helped 10+ airlines achieve $10 million - $30
-                  million incremental savings in 3-9 months.
+                  AerOpt has helped 10+ airlines achieve $10 million to $30 million
+                  in incremental savings within 3 to 9 months.
                 </p>
               </div>
             </div>
+      
             <div class="col-md-6 order-1 pb-lg-6 pb-4 order-md-2">
               <img
                 src="./assets/images/aeropt-value.jpg"
-                alt="Airplane on runway"
-                class="img-fluid info-section__image" />
+                alt="Airplane parked on a runway with a clear sky"
+                class="img-fluid info-section__image"
+              />
             </div>
           </div>
         </div>
       </section>
+      
 
-      <section class="timeline-section mb-2 pt-5 pt-lg-0">
+      <section class="timeline-section mb-2 pt-5 pt-lg-0" aria-labelledby="timeline-heading">
         <div class="container-lg">
           <div class="row">
             <div class="col-12 text-center">
-              <h2 class="timeline__title primary-color text-start mb-5">
-                What do you wish to Improve in<span class="secondary-color"
-                  >&nbsp;2025</span
-                >?
+              <h2 id="timeline-heading" class="timeline__title primary-color text-start mb-5">
+                What do you wish to Improve in<span class="secondary-color">&nbsp;2025</span>?
               </h2>
             </div>
           </div>
-
-          <div class="timeline-wrapper">
-            <div class="timeline__line mt-3 mt-md-0"></div>
+      
+          <div class="timeline-wrapper" role="region" aria-label="Timeline of improvement steps">
+            <div class="timeline__line mt-3 mt-md-0" aria-hidden="true"></div>
             <div class="timeline__plane-icon">
               <img
                 src="assets/images/gold-color-aeroplan-icon.png"
-                alt="Timeline progress indicator" />
+                alt="Timeline progress indicator"
+              />
             </div>
-
+      
             <div class="timeline-item mb-md-7 mb-5" data-step="1">
-              <div
-                class="row align-items-md-center d-flex justify-content-start">
+              <div class="row align-items-md-center d-flex justify-content-start">
                 <div class="col-md-5 order-md-1 d-none d-md-block">
                   <div class="timeline-item__image">
                     <img
                       src="assets/images/fleet-assignment.png"
-                      alt="Fleet assignment"
-                      class="img-fluid" />
+                      alt="Illustration of fleet assignment optimization"
+                      class="img-fluid"
+                    />
                   </div>
                 </div>
                 <div class="col-2 col-md-2 order-md-2 mt-2 mt-md-0">
-                  <div class="timeline-item__indicator">
+                  <div class="timeline-item__indicator" aria-hidden="true">
                     <div class="timeline-item__step-number">1</div>
                   </div>
                 </div>
                 <div class="col-10 col-md-5 order-md-3 timeline__points">
                   <div class="timeline-item__content">
-                    <h3 class="mb-3 primary-color">Demand forecasting</h3>
+                    <h3 class="mb-3 primary-color">Demand Forecasting</h3>
                     <p class="text-color">
                       Use statistical models, machine learning, and historical
                       data to predict future passenger demand.
@@ -181,27 +210,27 @@
                 </div>
               </div>
             </div>
-
+      
             <div class="timeline-item mb-md-7 mb-5" data-step="2">
-              <div
-                class="row align-items-md-center d-flex justify-content-start">
+              <div class="row align-items-md-center d-flex justify-content-start">
                 <div class="col-md-5 order-md-3 d-none d-md-block">
                   <div class="timeline-item__image">
                     <img
                       src="assets/images/dynamic-pricing.png"
-                      alt="Fleet assignment"
-                      class="img-fluid" />
+                      alt="Illustration of dynamic pricing and revenue management"
+                      class="img-fluid"
+                    />
                   </div>
                 </div>
                 <div class="col-2 col-md-2 order-md-2 mt-2 mt-md-0">
-                  <div class="timeline-item__indicator">
+                  <div class="timeline-item__indicator" aria-hidden="true">
                     <div class="timeline-item__step-number">2</div>
                   </div>
                 </div>
                 <div class="col-10 col-md-5 order-md-1 timeline__points">
                   <div class="timeline-item__content">
                     <h3 class="mb-3 primary-color">
-                      Dynamic pricing & Revenue management
+                      Dynamic Pricing & Revenue Management
                     </h3>
                     <p class="text-color">
                       Optimize airline revenue with dynamic pricing and advanced
@@ -212,26 +241,26 @@
                 </div>
               </div>
             </div>
-
+      
             <div class="timeline-item mb-md-7 mb-5" data-step="3">
-              <div
-                class="row align-items-md-center d-flex justify-content-start">
+              <div class="row align-items-md-center d-flex justify-content-start">
                 <div class="col-md-5 order-md-1 d-none d-md-block">
                   <div class="timeline-item__image">
                     <img
                       src="assets/images/crew-cargo.png"
-                      alt="Fleet assignment"
-                      class="img-fluid" />
+                      alt="Illustration of crew and cargo optimization"
+                      class="img-fluid"
+                    />
                   </div>
                 </div>
                 <div class="col-2 col-md-2 order-md-2 mt-2 mt-md-0">
-                  <div class="timeline-item__indicator">
+                  <div class="timeline-item__indicator" aria-hidden="true">
                     <div class="timeline-item__step-number">3</div>
                   </div>
                 </div>
                 <div class="col-10 col-md-5 order-md-3 timeline__points">
                   <div class="timeline-item__content">
-                    <h3 class="mb-3 primary-color">Crew &Cargo optimization</h3>
+                    <h3 class="mb-3 primary-color">Crew & Cargo Optimization</h3>
                     <p class="text-color">
                       Revolutionizing airline efficiency with advanced Crew and
                       Cargo optimization solutions. Maximize operations, reduce
@@ -241,32 +270,30 @@
                 </div>
               </div>
             </div>
-
+      
             <div class="timeline-item mb-md-7 mb-5" data-step="4">
-              <div
-                class="row align-items-md-center d-flex justify-content-start">
+              <div class="row align-items-md-center d-flex justify-content-start">
                 <div class="col-md-5 order-md-3 d-none d-md-block">
                   <div class="timeline-item__image">
                     <img
                       src="assets/images/demand-forecasting.png"
-                      alt="Fleet assignment"
-                      class="img-fluid" />
+                      alt="Illustration of fleet assignment and scheduling"
+                      class="img-fluid"
+                    />
                   </div>
                 </div>
                 <div class="col-2 col-md-2 order-md-2 mt-2 mt-md-0">
-                  <div class="timeline-item__indicator">
+                  <div class="timeline-item__indicator" aria-hidden="true">
                     <div class="timeline-item__step-number">4</div>
                   </div>
                 </div>
                 <div class="col-10 col-md-5 order-md-1 timeline__points">
                   <div class="timeline-item__content">
-                    <h3 class="mb-3 primary-color">
-                      Fleet assignment & Scheduling
-                    </h3>
+                    <h3 class="mb-3 primary-color">Fleet Assignment & Scheduling</h3>
                     <p class="text-color">
                       Optimize airline fleet assignment and scheduling with our
-                      innovative system, boosting efficiency, reducing costs,
-                      and enhancing operational performance.
+                      innovative system, boosting efficiency, reducing costs, and
+                      enhancing operational performance.
                     </p>
                   </div>
                 </div>
@@ -275,45 +302,50 @@
           </div>
         </div>
       </section>
-
-      <!-- Success Section -->
-      <section class="success py-lg-7 py-5" aria-labelledby="success-heading">
+      
+      <section class="success py-lg-7 py-5" aria-labelledby="success-heading" role="region" aria-label="Success Stories Section">
         <div class="container-lg">
-          <!-- Section Heading -->
           <div class="row align-items-center mb-5">
             <div class="col">
+              <!-- Section Heading -->
               <h2 id="success-heading" class="primary-color">
                 Success <span class="secondary-color">Stories</span>
               </h2>
             </div>
             <div class="col-auto d-none d-md-block me-3">
+              <!-- Navigation Buttons -->
               <div class="d-flex gap-3">
                 <button
                   class="success__nav-button success__arrow-left btn"
-                  aria-label="Previous slide">
+                  aria-label="Previous slide"
+                  type="button">
                   <img
                     src="assets/images/arrow-left.svg"
-                    alt="Previous slide" />
+                    alt=""
+                    aria-hidden="true" />
                 </button>
                 <button
                   class="success__nav-button success__arrow-right btn"
-                  aria-label="Next slide">
-                  <img src="assets/images/arrow-right.svg" alt="Next slide" />
+                  aria-label="Next slide"
+                  type="button">
+                  <img
+                    src="assets/images/arrow-right.svg"
+                    alt=""
+                    aria-hidden="true" />
                 </button>
               </div>
             </div>
           </div>
-
-          <!-- Carousel -->
-          <div class="success__carousel swiper">
+      
+          <div class="success__carousel swiper" role="region" aria-label="Carousel of success stories">
             <div class="swiper-wrapper">
               <!-- Slide 1 -->
-              <div class="swiper-slide">
+              <div class="swiper-slide" role="group" aria-label="Slide 1 of 3">
                 <div class="row">
                   <div class="col-md-6 mb-4 mb-md-0 success__image-wrapper">
                     <img
                       src="assets/images/aeropt-value.jpg"
-                      alt="Aircraft on runway"
+                      alt="Aircraft on runway representing operations research success"
                       class="success__image img-fluid" />
                   </div>
                   <div class="col-md-6">
@@ -330,20 +362,21 @@
                     </p>
                     <a
                       href="#"
-                      class="secondary-color fw-medium text-decoration-none">
+                      class="secondary-color fw-medium text-decoration-none"
+                      aria-label="Read more about Operations Research success story">
                       Read More
                     </a>
                   </div>
                 </div>
               </div>
-
+      
               <!-- Slide 2 -->
-              <div class="swiper-slide">
+              <div class="swiper-slide" role="group" aria-label="Slide 2 of 3">
                 <div class="row">
                   <div class="col-md-6 mb-4 mb-md-0 success__image-wrapper">
                     <img
                       src="assets/images/aeropt-value.jpg"
-                      alt="Aircraft in flight"
+                      alt="Aircraft in flight representing advanced analytics success"
                       class="success__image img-fluid" />
                   </div>
                   <div class="col-md-6">
@@ -358,20 +391,21 @@
                     </p>
                     <a
                       href="#"
-                      class="secondary-color fw-medium text-decoration-none">
+                      class="secondary-color fw-medium text-decoration-none"
+                      aria-label="Read more about Advanced Analytics success story">
                       Read More
                     </a>
                   </div>
                 </div>
               </div>
-
+      
               <!-- Slide 3 -->
-              <div class="swiper-slide">
+              <div class="swiper-slide" role="group" aria-label="Slide 3 of 3">
                 <div class="row">
                   <div class="col-md-6 mb-4 mb-md-0 success__image-wrapper">
                     <img
                       src="assets/images/aeropt-value.jpg"
-                      alt="Innovative fleet optimization solution"
+                      alt="Illustration of fleet optimization success"
                       class="success__image img-fluid" />
                   </div>
                   <div class="col-md-6">
@@ -386,47 +420,63 @@
                     </p>
                     <a
                       href="#"
-                      class="secondary-color fw-medium text-decoration-none">
+                      class="secondary-color fw-medium text-decoration-none"
+                      aria-label="Read more about Fleet Optimization success story">
                       Read More
                     </a>
                   </div>
                 </div>
               </div>
             </div>
-
+      
             <!-- Pagination -->
             <div class="success__pagination swiper-pagination"></div>
           </div>
         </div>
-      </section>
+      </section>      
 
-      <section class="cta-banner text-center py-5 pb-lg-8 pt-lg-9">
+      <section 
+        class="cta-banner text-center py-5 pb-lg-8 pt-lg-9" 
+        aria-labelledby="cta-banner-title" 
+        role="region" 
+        aria-label="Call to Action Banner"
+      >
         <div class="container-lg">
-          <h2 class="cta-banner__title pb-30 text-white">
+          <h2 id="cta-banner-title" class="cta-banner__title pb-30 text-white">
             Airline margins are wafer thin. Extract every ounce of savings with
             AerOpt
           </h2>
-          <a href="" class="primary-btn">Find out how</a>
+          <a 
+            href="#" 
+            class="primary-btn" 
+            role="button" 
+            aria-label="Find out how AerOpt can improve airline margins">
+            Find out how
+          </a>
         </div>
       </section>
-      <!-- capabilities Section -->
-      <section class="py-5 py-lg-8">
+
+      <section class="py-5 py-lg-8" aria-labelledby="capabilities-heading" role="region" aria-label="Core Capabilities Section">
         <div class="container-lg">
           <div>
-            <h2 class="capabilities__heading primary-color mb-5 mb-md-6">
+            <!-- Section Heading -->
+            <h2 id="capabilities-heading" class="capabilities__heading primary-color mb-5 mb-md-6">
               Backed by deep airline expertise,
               <span class="secondary-color">AerOpt</span>
               delivers value through 4 core capabilities
             </h2>
           </div>
-
+      
+          <!-- Capabilities Container -->
           <div class="capabilities__container" role="list">
-            <div class="capabilities__items--left" role="listitem">
+            <!-- Left Items -->
+            <div class="capabilities__items--left" role="listitem" tabindex="0" aria-labelledby="data-science-title technology-title">
               <div
                 class="capabilities__items"
                 data-capability="data-science"
                 tabindex="0"
-                aria-labelledby="data-science-title">
+                aria-labelledby="data-science-title"
+                role="listitem">
                 <h3
                   class="capabilities__title fw-medium h4"
                   id="data-science-title">
@@ -434,18 +484,16 @@
                 </h3>
                 <div class="capabilities__line" aria-hidden="true"></div>
               </div>
-              <p
-                class="capability__description para-small"
-                id="data-science-desc">
-                Applying machine learning to calibrate and improve data-driven
-                models
+              <p class="capability__description para-small" id="data-science-desc">
+                Applying machine learning to calibrate and improve data-driven models
               </p>
-
+      
               <div
                 class="capabilities__items is-even"
                 data-capability="technology"
                 tabindex="0"
-                aria-labelledby="technology-title">
+                aria-labelledby="technology-title"
+                role="listitem">
                 <h3
                   class="capabilities__title fw-medium h4"
                   id="technology-title">
@@ -453,13 +501,12 @@
                 </h3>
                 <div class="capabilities__line" aria-hidden="true"></div>
               </div>
-              <p
-                class="capability__description para-small"
-                id="technology-desc">
+              <p class="capability__description para-small" id="technology-desc">
                 Building scalable solutions with modern technology stack
               </p>
             </div>
-
+      
+            <!-- Center Illustration -->
             <div class="capabilities__center">
               <img
                 src="assets/images/inner.png"
@@ -469,6 +516,7 @@
                 src="assets/images/Ring.png"
                 alt="Core capabilities illustration with overlays"
                 class="capabilities__center-image" />
+              <!-- Overlays -->
               <div
                 class="capabilities__center-overlay default"
                 data-image="data-science"
@@ -491,8 +539,7 @@
                 data-image="operations"
                 aria-hidden="true">
                 <p class="para-small">
-                  Optimizing complex airline operations through advanced
-                  algorithms
+                  Optimizing complex airline operations through advanced algorithms
                 </p>
               </div>
               <div
@@ -504,13 +551,15 @@
                 </p>
               </div>
             </div>
-
+      
+            <!-- Right Items -->
             <div class="capabilities__items--right" role="listitem">
               <div
                 class="capabilities__items reverse"
                 data-capability="operations"
                 tabindex="0"
-                aria-labelledby="operations-title">
+                aria-labelledby="operations-title"
+                role="listitem">
                 <h3
                   class="capabilities__title fw-medium h4"
                   id="operations-title">
@@ -521,15 +570,15 @@
               <p
                 class="capability__description reverse para-small"
                 id="operations-desc">
-                Optimizing complex airline operations through advanced
-                algorithms
+                Optimizing complex airline operations through advanced algorithms
               </p>
-
+      
               <div
                 class="capabilities__items is-even reverse"
                 data-capability="consulting"
                 tabindex="0"
-                aria-labelledby="consulting-title">
+                aria-labelledby="consulting-title"
+                role="listitem">
                 <h3
                   class="capabilities__title fw-medium h4"
                   id="consulting-title">
@@ -545,7 +594,7 @@
             </div>
           </div>
         </div>
-      </section>
+      </section>      
 
       <section class="info-cards py-5 py-lg-7">
         <div class="container-lg">
@@ -1061,69 +1110,59 @@
           <div class="row">
             <div class="col-lg-6">
               <div class="row row-gap-4">
-                <div
-                  class="col-lg-6 d-md-flex flex-md-column align-items-md-center">
+                <div class="col-lg-6 d-md-flex flex-md-column align-items-md-center">
                   <div class="profile__card">
                     <div class="profile__card--image">
                       <img
                         src="assets/images/Balakrishnan.jpg"
-                        alt="Balakrishnan"
+                        alt="Balakrishnan - CEO"
                         class="img-fluid w-100" />
                       <div class="profile__card--author">
-                        <p class="profile__card--title text-white">
-                          Balakrishnan
-                        </p>
-                        <p
-                          class="profile__card--description text-white mb-0 para-small">
+                        <p class="profile__card--title text-white">Balakrishnan</p>
+                        <p class="profile__card--description text-white mb-0 para-small">
                           CEO
                         </p>
                       </div>
                     </div>
                     <div class="profile__card--content pt-4 px-2">
                       <p class="text-color para-small mb-3">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Autem voluptas voluptatem dolor aperiam, omnis quae
-                        voluptatum culpa eum porro nostrum iure perferendis
-                        adipisci distinctio quo, quibusdam sit rem reprehenderit
-                        minus.
+                        Balakrishnan leads the team with a focus on innovation and excellence,
+                        ensuring the company's goals align with client success.
                       </p>
-                      <img
-                        src="./assets/images/linkedin-icon.png"
-                        alt="linkedin-icon"
-                        class="profile__card--icon" />
+                      <a href="https://www.linkedin.com/in/balakrishnan" target="_blank">
+                        <img
+                          src="./assets/images/linkedin-icon.png"
+                          alt="LinkedIn profile for Balakrishnan"
+                          class="profile__card--icon" />
+                      </a>
                     </div>
                   </div>
                 </div>
-                <div
-                  class="col-lg-6 mt-4 mt-md-0 d-md-flex flex-md-column align-items-md-center">
+                <div class="col-lg-6 mt-4 mt-md-0 d-md-flex flex-md-column align-items-md-center">
                   <div class="profile__card">
                     <div class="profile__card--image">
                       <img
                         src="assets/images/Rajesh.jpg"
-                        alt="Rajesh"
+                        alt="Rajesh - CTO"
                         class="img-fluid w-100" />
                       <div class="profile__card--author">
-                        <p class="profile__card--title text-white">
-                          Balakrishnan
-                        </p>
-                        <p
-                          class="profile__card--description text-white mb-0 para-small">
-                          CEO
+                        <p class="profile__card--title text-white">Rajesh</p>
+                        <p class="profile__card--description text-white mb-0 para-small">
+                          CTO
                         </p>
                       </div>
                     </div>
                     <div class="profile__card--content pt-4 px-2">
                       <p class="para-small text-color mb-3">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Autem voluptas voluptatem dolor aperiam, omnis quae
-                        voluptatum culpa eum porro nostrum iure perferendis
-                        adipisci distinctio quo, quibusdam sit rem reprehenderit
-                        minus.
+                        Rajesh oversees technology strategies, ensuring robust and scalable
+                        solutions for our clients' needs.
                       </p>
-                      <img
-                        src="./assets/images/linkedin-icon.png"
-                        alt="linkedin-icon"
-                        class="profile__card--icon" />
+                      <a href="https://www.linkedin.com/in/rajesh" target="_blank">
+                        <img
+                          src="./assets/images/linkedin-icon.png"
+                          alt="LinkedIn profile for Rajesh"
+                          class="profile__card--icon" />
+                      </a>
                     </div>
                   </div>
                 </div>
@@ -1142,23 +1181,23 @@
                       </p>
                       <img
                         src="./assets/images/saudi-arabia-flag.png"
-                        alt="Saudi Arabia Flag" />
+                        alt="Flag of Saudi Arabia" />
                     </li>
                     <li class="profile-engagement__item">
                       <p class="mb-0">
-                        Improving crew allocation for a growing airline in
-                        <b>Brazil</b>
+                        Improving crew allocation for a growing airline in <b>Brazil</b>
                       </p>
                       <img
                         src="./assets/images/brazil-flag.png"
-                        alt="Brazil Flag" />
+                        alt="Flag of Brazil" />
                     </li>
                     <li class="profile-engagement__item">
                       <p class="mb-0">
-                        Reducing cost of operations for a chartered airline in
-                        <b>USA</b>
+                        Reducing cost of operations for a chartered airline in <b>USA</b>
                       </p>
-                      <img src="./assets/images/use-plag.png" alt="USA Flag" />
+                      <img
+                        src="./assets/images/usa-flag.png"
+                        alt="Flag of the United States" />
                     </li>
                   </ul>
                 </div>
@@ -1167,65 +1206,67 @@
           </div>
         </div>
       </section>
+      
     </main>
+
     <footer class="pb-lg-6 pb-5 primary-color">
       <div class="container-lg">
         <div class="cta-banner text-center pb-lg-8 pt-lg-9 py-5">
           <div class="container-lg">
             <h2 class="cta-banner__title pb-30 text-white">
-              Choose AerOpt: Your
-              <span class="secondary-color">{optimization}</span> co-pilot to
-              better bottom line
+              Choose AerOpt: Your
+              <span class="secondary-color">{Optimization}</span> Co-Pilot to a Better Bottom Line
             </h2>
-            <a href="" class="primary-btn">Talk to an Expert</a>
+            <a href="#contact" class="primary-btn">Talk to an Expert</a>
           </div>
         </div>
         <div class="row">
+          <!-- Logo and Social Media -->
           <div class="col-lg-4">
             <div class="h-100 d-flex flex-column justify-content-between">
               <div class="footer__logo">
                 <img
                   src="./assets/images/aeropt-logo.png"
-                  alt="aeroplan logo" />
-                <div
-                  class="footer__social--icons d-flex gap-3 pt-3 pb-30 pb-lg-0">
-                  <a href="">
+                  alt="AerOpt logo" />
+                <div class="footer__social--icons d-flex gap-3 pt-3 pb-30 pb-lg-0">
+                  <a href="https://linkedin.com" aria-label="Visit our LinkedIn">
                     <img
                       src="./assets/images/linkedin-icon-white.png"
-                      alt="linkedin-icon" />
+                      alt="LinkedIn icon" />
                   </a>
-                  <a href="">
+                  <a href="https://twitter.com" aria-label="Visit our Twitter">
                     <img
-                      src="./assets/images/twitter-icon (2).png"
-                      alt="twitter-icon" />
+                      src="./assets/images/twitter-icon.png"
+                      alt="Twitter icon" />
                   </a>
-                  <a href="">
+                  <a href="https://facebook.com" aria-label="Visit our Facebook">
                     <img
                       src="./assets/images/facebook-icon.png"
-                      alt="facebook-icon" />
+                      alt="Facebook icon" />
                   </a>
-                  <a href="">
+                  <a href="https://instagram.com" aria-label="Visit our Instagram">
                     <img
                       src="./assets/images/instagram-icon.png"
-                      alt="instagram-icon" />
+                      alt="Instagram icon" />
                   </a>
                 </div>
               </div>
               <div class="footer__copyright d-none d-lg-block">
                 <p class="text-white para-small">
-                  Copyrights©2024 Aeropt private limited all rights reserved.
+                  ©2024 AerOpt Private Limited. All rights reserved.
                 </p>
               </div>
             </div>
           </div>
+          <!-- Locations -->
           <div class="col-lg-4 h-100">
             <div class="row">
               <div class="col-6 col-lg-12 pe-0">
                 <div
                   class="footer__location footer__location--first ps-0 ps-lg-3 d-flex flex-column justify-content-between">
-                  <p class="text-white mb-2 mb-md-0 h3">Banglore</p>
+                  <p class="text-white mb-2 mb-md-0 h3">Bangalore</p>
                   <p class="text-white mb-0 para-small">
-                    Akshya Nagar 1st Block 1st Cross, Rammurthy nagar,
+                    Akshya Nagar 1st Block 1st Cross, Ramamurthy Nagar,
                     Bangalore-560016
                   </p>
                 </div>
@@ -1233,15 +1274,15 @@
               <div class="col-6 col-lg-12 pe-0 pt-lg-5">
                 <div
                   class="footer__location ps-3 d-flex flex-column justify-content-between">
-                  <p class="text-white mb-2 mb-md-0 h3">Banglore</p>
+                  <p class="text-white mb-2 mb-md-0 h3">Chennai</p>
                   <p class="text-white mb-0 para-small">
-                    Akshya Nagar 1st Block 1st Cross, Rammurthy nagar,
-                    Bangalore-560016
+                    123 Marina Beach Road, Besant Nagar, Chennai-600090
                   </p>
                 </div>
               </div>
             </div>
           </div>
+          <!-- Newsletter and Policies -->
           <div class="col-lg-4 mt-4 mt-lg-0">
             <div class="d-flex flex-column justify-content-between h-100">
               <div class="footer__newsletter mb-3 mb-lg-0">
@@ -1252,8 +1293,10 @@
                   action="#"
                   method="POST"
                   class="footer__newsletter-form mt-3">
+                  <label for="email" class="sr-only">Email Address</label>
                   <input
                     type="email"
+                    id="email"
                     name="email"
                     placeholder="Enter your Email"
                     class="footer__newsletter-input para-small"
@@ -1261,33 +1304,33 @@
                   <button
                     type="submit"
                     class="footer__newsletter-button primary-color fw-bold h5">
-                    <span class="footer__newsletter-button-icon"
-                      ><img
+                    <span class="footer__newsletter-button-icon">
+                      <img
                         src="assets/images/aeroplan-navy-color.png"
-                        alt="airplane icon"
-                        class="pe-2"
-                    /></span>
+                        alt="AerOpt airplane icon"
+                        class="pe-2" />
+                    </span>
                     Subscribe
                   </button>
                 </form>
               </div>
-
+    
               <div
                 class="footer__policy--links d-flex flex-column justify-content-end">
                 <p class="text-white d-lg-none para-small">
-                  Copyrights©2024 Aeropt private limited all rights reserved.
+                  ©2024 AerOpt Private Limited. All rights reserved.
                 </p>
                 <div
                   class="d-flex justify-content-start justify-content-md-end mt-3">
-                  <a href="" class="text-white text-decoration-none para-small"
-                    >Privacy Policy</a
-                  >
+                  <a href="#privacy-policy" class="text-white text-decoration-none para-small">
+                    Privacy Policy
+                  </a>
                   <div class="text-white ms-3">|</div>
                   <a
-                    href=""
-                    class="text-white text-decoration-none ms-3 para-small"
-                    >Terms & Conditions</a
-                  >
+                    href="#terms-conditions"
+                    class="text-white text-decoration-none ms-3 para-small">
+                    Terms & Conditions
+                  </a>
                 </div>
               </div>
             </div>
@@ -1295,6 +1338,7 @@
         </div>
       </div>
     </footer>
+    
     <script src="./assets/js/aeropt.js"></script>
   </body>
 </html>
