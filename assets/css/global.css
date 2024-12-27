@@ -167,3 +167,21 @@ p,
 .charcoal-blue {
   color: #3e3e6a;
 }
+
+/* Skip Content */
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  background: #007BFF; /* High-contrast color */
+  color: white;
+  padding: 8px 16px;
+  text-decoration: none;
+  z-index: 1000;
+}
+
+.skip-link:focus {
+  top: 10px;
+  left: 10px;
+  outline: none;
+}
