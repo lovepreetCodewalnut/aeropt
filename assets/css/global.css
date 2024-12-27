@@ -1,6 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 
-
 @font-face {
   font-family: "InterTightThin";
   src: url("../fonts/InterTight-Thin.ttf") format("truetype");
@@ -72,8 +71,6 @@
   font-style: normal;
   font-display: swap;
 }
-
-
 
 :root {
   --primary-color: #0e3549;
@@ -237,7 +234,7 @@ p,
   position: absolute;
   top: -40px;
   left: 0;
-  background: #007BFF; /* High-contrast color */
+  background: #007bff; /* High-contrast color */
   color: white;
   padding: 8px 16px;
   text-decoration: none;
