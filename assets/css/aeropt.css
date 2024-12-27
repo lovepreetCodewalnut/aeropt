@@ -12,12 +12,12 @@
   background-image: url("../images/hero-bg-image.png");
   background-repeat: no-repeat;
   background-size: cover;
-  color: #fff;
 }
 
 .main-banner__title {
   display: inline-block;
   white-space: wrap;
+  max-width: 1100px;
 }
 
 .main-banner__rotating-text-item {
@@ -120,7 +120,7 @@
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  z-index: 10;
+  z-index: 0;
   transition: top 0.3s ease;
 }
 
@@ -230,6 +230,10 @@
   overflow-x: hidden;
 }
 
+.capabilities__heading {
+  max-width: 1000px;
+}
+
 .capabilities__container {
   max-width: 1400px;
   margin: 0 auto;
@@ -334,8 +338,7 @@
 
 .capabilities__title {
   color: var(--text-color);
-  font-size: 20px;
-  font-weight: 500;
+
   transition: color 0.3s ease;
   margin: 0;
 }
@@ -366,8 +369,6 @@
   padding: 1.5rem;
   border-left: 2px solid var(--text-color);
   color: var(--text-color);
-  font-size: 16px;
-  line-height: 1.5;
   transition: all 0.3s ease;
   max-width: 345px;
   width: 100%;
@@ -391,6 +392,7 @@
     margin: 40px auto;
     width: 300px;
     height: 300px;
+    display: none;
   }
 
   .capabilities__items--left,
@@ -418,6 +420,10 @@
   color: white;
 }
 
+.info-card__big-title {
+  color: var(--secondary-color);
+}
+
 .info-card__description {
   color: white;
 }
@@ -438,6 +444,13 @@
   font-weight: 700;
 }
 
+.secondary-path {
+  fill: var(--secondary-color);
+}
+.primary-path {
+  fill: var(--white-color);
+}
+
 .profile__card--image {
   position: relative;
   border-radius: 15px;
@@ -455,10 +468,6 @@
   background: linear-gradient(to bottom, #0e305d00 10%, #0e305d 90%);
 }
 
-.profile__card--content p {
-  font-size: 14px;
-}
-
 .profile-engagements {
   width: 100%;
   margin: 0 auto;
@@ -474,10 +483,19 @@
   border-bottom: 1px solid #f1ede6;
 }
 
+.profile-engagements__wrapper:hover .profile-engagements__list {
+  animation-play-state: paused;
+}
+
+.partner-logos__wrapper:hover .partner-logos__track {
+  animation-play-state: paused;
+}
+
 .profile-engagements__wrapper {
   position: relative;
   overflow: hidden;
   height: 350px;
+  background-color: var(--color-white);
 }
 
 .profile-engagements__list {
@@ -493,25 +511,30 @@
 }
 
 .profile-engagement__item {
+  color: var(--primary-color);
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 20px;
-  padding: 10px 15px;
-  background-color: #fff;
+  padding: 5px 16px;
+  background-color: #ffff;
   border-radius: 5px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  transition: all 0.3s ease;
+  opacity: 0.5;
 }
 
-.profile-engagements__wrapper:hover .profile-engagements__list {
-  animation-play-state: paused;
+.profile-engagement__item.active {
+  opacity: 1;
+  transform: scale(1.05);
+  background-color: #f5f4f4;
 }
 
-.partner-logos__wrapper:hover .partner-logos__track {
-  animation-play-state: paused;
+.profile-engagement__item img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
 }
-
 footer {
   background-color: var(--primary-color);
   border-bottom: 10px solid var(--secondary-color);
@@ -526,7 +549,6 @@ footer .cta-banner {
 }
 
 .footer__policy--links p {
-  font-size: 14px;
   border-top: 0.5px solid #ffffff;
   padding-top: 10px;
 }
@@ -547,15 +569,14 @@ footer .cta-banner {
   flex: 1;
   padding: 10px 15px;
   border: none;
-  border-radius: 10px 0 0 10px; /* Left rounded corners */
-  color: #fff; /* Input text color */
-  background-color: #dfe2e399; /* Light grey background */
+  border-radius: 10px 0 0 10px;
+  background-color: #dfe2e399;
   outline: none;
   height: 44px;
 }
 
 .footer__newsletter-input::placeholder {
-  color: #fff; /* Placeholder text color */
+  color: #fff;
 }
 
 .footer__newsletter-button {
@@ -563,18 +584,16 @@ footer .cta-banner {
   align-items: center;
   justify-content: center;
   padding: 10px 15px;
-  background-color: #d5ac6c; /* Gold background */
-  color: var(--primary-color); /* Button text color */
-  font-weight: bold;
+  background-color: #d5ac6c;
   height: 44px;
   border: none;
-  border-radius: 0 10px 10px 0; /* Right rounded corners */
+  border-radius: 0 10px 10px 0;
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
 
 .footer__newsletter-button:hover {
-  background-color: #b59458; /* Darker gold on hover */
+  background-color: #b59458;
 }
 
 @keyframes scrollEngagements {
@@ -596,6 +615,10 @@ footer .cta-banner {
 }
 
 @media (max-width: 1200px) {
+  /* Crew Section*/
+  .profile__card--image {
+    max-height: 100%;
+  }
   .footer__newsletter-form {
     flex-direction: column;
     gap: 10px;
@@ -614,10 +637,11 @@ footer .cta-banner {
   .footer__location--first {
     border-left: none;
   }
+
+  .footer__location {
+    min-height: 85px;
+  }
 }
-
-
-
 @media (max-width: 767.98px) {
   .timeline__line {
     left: 7%;
@@ -631,7 +655,8 @@ footer .cta-banner {
     width: 40px;
     height: 40px;
   }
-
+}
+@media (max-width: 768px) {
   /* Success Section (VK) */
   .success__heading {
     margin-bottom: 40px;
@@ -687,6 +712,7 @@ footer .cta-banner {
     border-right: none;
     border-left: none;
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+    max-width: 75%;
   }
 
   .capabilities__items--left,
@@ -698,7 +724,7 @@ footer .cta-banner {
   .capabilities__items,
   .capabilities__items.is-even {
     width: 100%;
-    max-width: 345px;
+    max-width: 75%;
   }
 
   .info-card {
@@ -706,6 +732,10 @@ footer .cta-banner {
   }
 
   .info-card__title {
+    color: var(--primary-color);
+  }
+
+  .info-card__big-title {
     color: var(--primary-color);
   }
 
@@ -720,6 +750,52 @@ footer .cta-banner {
   .info-card__main-card--time {
     font-size: 32px;
     line-height: 32px;
+  }
+
+  .secondary-path {
+    fill: var(--white-color);
+  }
+  .primary-path {
+    fill: var(--primary-color);
+  }
+
+  /* Crew Section */
+
+  .profile__card {
+    max-width: 75%;
+  }
+  .profile__card--image {
+    position: relative;
+    border-radius: 15px;
+    overflow: hidden;
+    max-height: 500px;
+  }
+  /*Footer section*/
+  .footer__newsletter {
+    width: 50%;
+  }
+}
+
+@media (max-width: 468px) {
+  .capabilities__items,
+  .capabilities__items.is-even {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .capability__description.reverse,
+  .capability__description {
+    max-width: 100%;
+  }
+
+  /*Crew SEction*/
+  .profile__card {
+    max-width: 100%;
+  }
+
+  /*Footer Section*/
+  .footer__newsletter {
+    width: 100%;
   }
 }
 

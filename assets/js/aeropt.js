@@ -107,24 +107,73 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 document.addEventListener("DOMContentLoaded", () => {
-  const list = document.querySelector(".profile-engagements__list");
+  /* Crew Section */
   const wrapper = document.querySelector(".profile-engagements__wrapper");
+  const list = document.querySelector(".profile-engagements__list");
+  const items = document.querySelectorAll(".profile-engagement__item");
 
-  // Duplicate list items for infinite scrolling
-  const originalItems = Array.from(list.children);
-  originalItems.forEach((item) => {
+  // Clone items for infinite scroll
+  items.forEach((item) => {
     const clone = item.cloneNode(true);
     list.appendChild(clone);
   });
 
-  // Pause scrolling on hover
+  const itemHeight = items[0].offsetHeight + 10; // 10px for margin-bottom
+  const totalHeight = itemHeight * items.length;
+  let scrollPosition = 0;
+  let animationId;
+  let isPaused = false;
+
+  function updateScroll() {
+    scrollPosition += 0.5; // Adjust this value to change scroll speed
+    if (scrollPosition >= totalHeight) {
+      scrollPosition = 0;
+    }
+    list.style.transform = `translateY(-${scrollPosition}px)`;
+
+    highlightCenterItem();
+
+    if (!isPaused) {
+      animationId = requestAnimationFrame(updateScroll);
+    }
+  }
+
+  function highlightCenterItem() {
+    const wrapperRect = wrapper.getBoundingClientRect();
+    const wrapperCenter = wrapperRect.top + wrapperRect.height / 2;
+
+    list.querySelectorAll(".profile-engagement__item").forEach((item) => {
+      const itemRect = item.getBoundingClientRect();
+      const itemCenter = itemRect.top + itemRect.height / 2;
+
+      if (Math.abs(wrapperCenter - itemCenter) < itemHeight / 2) {
+        item.classList.add("active");
+      } else {
+        item.classList.remove("active");
+      }
+    });
+  }
+
+  // Start scrolling
+  updateScroll();
+
+  // Pause animation on hover
   wrapper.addEventListener("mouseenter", () => {
-    list.style.animationPlayState = "paused";
+    isPaused = true;
+    cancelAnimationFrame(animationId);
   });
 
-  // Resume scrolling on mouse leave
   wrapper.addEventListener("mouseleave", () => {
-    list.style.animationPlayState = "running";
+    isPaused = false;
+    updateScroll();
+  });
+
+  // Update on window resize
+  window.addEventListener("resize", () => {
+    const newItemHeight = items[0].offsetHeight + 10;
+    itemHeight = newItemHeight;
+    totalHeight = itemHeight * items.length;
+    highlightCenterItem();
   });
 
   /* Success Section */
@@ -156,7 +205,7 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   /*  ----------Capabilities------------*/
-  const isMobile = () => window.innerWidth <= 768;
+  const isMobile = () => window.innerWidth <= 1200;
 
   document.querySelectorAll(".capabilities__items").forEach((item) => {
     const capability = item.dataset.capability;
@@ -197,11 +246,15 @@ document.addEventListener("DOMContentLoaded", () => {
     item.addEventListener("click", () => {
       if (isMobile()) {
         document.querySelectorAll(".capability-description").forEach((desc) => {
-          desc.classList.remove("active");
+          // Remove 'active' class from all descriptions except the clicked one
+          if (desc !== description) {
+            desc.classList.remove("active");
+          }
         });
 
         if (description) {
-          description.classList.add("active");
+          // Toggle the 'active' class on the clicked item's description
+          description.classList.toggle("active");
         }
       }
     });
