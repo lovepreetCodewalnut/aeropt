@@ -62,11 +62,13 @@ document.addEventListener("DOMContentLoaded", () => {
   scrollLogos();
 });
 
+/*What do you wish Section */
 document.addEventListener("DOMContentLoaded", () => {
   const timelineWrapper = document.querySelector(".timeline-wrapper");
   const timelineItems = document.querySelectorAll(".timeline-item");
   const planeIcon = document.querySelector(".timeline__plane-icon");
   const timelineLine = document.querySelector(".timeline__line");
+  const stepNumbers = document.querySelectorAll(".timeline-item__step-number");
 
   function updateTimeline() {
     const wrapperRect = timelineWrapper.getBoundingClientRect();
@@ -81,18 +83,28 @@ document.addEventListener("DOMContentLoaded", () => {
     );
 
     // Calculate normalized progress (0 to 1)
-    const progress = scrollPosition / (sectionHeight - startOffset);
+    let progress = scrollPosition / (sectionHeight - startOffset);
+
+    // Get the position of the 4th step
+    const fourthStepRect = stepNumbers[3].getBoundingClientRect();
+    const fourthStepPosition =
+      (fourthStepRect.top + fourthStepRect.height / 2 - wrapperRect.top) /
+      sectionHeight;
+
+    // Limit the progress to the 4th step
+    progress = Math.min(progress, fourthStepPosition);
 
     // Update plane icon and timeline line based on progress
     planeIcon.style.top = `${progress * 100}%`;
     timelineLine.style.height = `${progress * 100}%`;
 
     // Highlight active timeline items
-    timelineItems.forEach((item) => {
+    timelineItems.forEach((item, index) => {
       const itemRect = item.getBoundingClientRect();
       const isActive =
         itemRect.top + itemRect.height / 2 <= windowHeight / 2 &&
-        itemRect.top >= 0;
+        itemRect.top >= 0 &&
+        index < 4; // Only activate up to the 4th step
 
       item.classList.toggle("active", isActive);
     });
@@ -105,7 +117,6 @@ document.addEventListener("DOMContentLoaded", () => {
   // Initial update
   updateTimeline();
 });
-
 document.addEventListener("DOMContentLoaded", () => {
   /* Crew Section */
   const wrapper = document.querySelector(".profile-engagements__wrapper");

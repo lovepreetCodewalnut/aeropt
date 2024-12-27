@@ -17,7 +17,7 @@
 .main-banner__title {
   display: inline-block;
   white-space: wrap;
-  max-width: 1100px;
+  max-width: 1200px;
 }
 
 .main-banner__rotating-text-item {
@@ -87,7 +87,7 @@
 .info-section__image {
   box-shadow: 0px 15px 15px 0px #00000040;
   border-radius: 0 0 50px 0;
-  width: 400px;
+  width: 500px;
 }
 
 /* General Section Styling */
@@ -549,14 +549,8 @@ footer .cta-banner {
   background-image: none;
 }
 
-.footer__policy--links p {
-  border-top: 0.5px solid #ffffff;
-  padding-top: 10px;
-}
-
 .footer__location {
   border-left: 2px solid #fafafa;
-  min-height: 100px;
 }
 
 .footer__location--width {
@@ -628,10 +622,6 @@ footer .cta-banner {
   .footer__location--first {
     border-left: none;
   }
-
-  .footer__location {
-    min-height: 85px;
-  }
 }
 
 @media (max-width: 1100px) {
@@ -656,7 +646,7 @@ footer .cta-banner {
 @media (max-width: 768px) {
   /*Value section*/
   .info-section__item {
-    margin-bottom: 0px;
+    margin-bottom: 20px;
   }
 
   .info-section__image {
@@ -733,25 +723,11 @@ footer .cta-banner {
   }
 
   .info-card {
-    background-color: var(--secondary-color);
     border-radius: 10px;
-  }
-
-  .info-card__title {
-    color: var(--primary-color);
-  }
-
-  .info-card__big-title {
-    color: var(--primary-color);
   }
 
   .info-card__main-card {
-    background-color: var(--secondary-color);
     border-radius: 10px;
-  }
-
-  .info-card__main-card--title {
-    color: var(--primary-color);
   }
 
   .info-card__main-card--time {
@@ -763,7 +739,7 @@ footer .cta-banner {
     fill: var(--white-color);
   }
   .primary-path {
-    fill: var(--primary-color);
+    fill: var(--secondary-color);
   }
 
   /* Crew Section */
@@ -780,6 +756,10 @@ footer .cta-banner {
   /*Footer section*/
   .footer__newsletter {
     width: 50%;
+  }
+
+  .footer__location-bottom {
+    border-top: 0.5px solid #ffffff;
   }
 }
 
@@ -803,6 +783,11 @@ footer .cta-banner {
   /*Footer Section*/
   .footer__newsletter {
     width: 100%;
+  }
+
+  .footer__location-bottom {
+    flex-direction: column !important;
+    gap: 20px;
   }
 }
 
